@@ -55,7 +55,7 @@ export function DrawerContent(props) {
                                         size={size} />
                                 )}
                                     label="Services"
-                                    onPress={() => { props.navigation.navigate('Our Services') }}
+                                    onPress={() => { props.navigation.navigate('Services') }}
                                 />
                                 <DrawerItem icon={({ color, size }) => (
                                     <Icon
@@ -91,13 +91,13 @@ export function DrawerContent(props) {
                     </View>
                     <Drawer.Section style={styles.bottomDrawerSection}>
                         <TouchableOpacity onPress={() => { Linking.openURL(`tel:${constants.phoneNumber}`); }}>
-                            <Icon name='phone' size={30} color={'black'} />
+                            <Icon name='phone' size={30} color={constants.myColors.navyDark} />
                         </TouchableOpacity>
                         <TouchableOpacity onPress={() => { Linking.openURL(constants.whatsapp); }}>
-                            <Icon name='whatsapp' size={30} color={'black'} />
+                            <Icon name='whatsapp' size={30} color={constants.myColors.navyDark} />
                         </TouchableOpacity>
                         <TouchableOpacity onPress={() => { Linking.openURL(`mailto:${constants.email}`); }}>
-                            <Icon name='email' size={30} color={'black'} />
+                            <Icon name='email' size={30} color={constants.myColors.navyDark} />
                         </TouchableOpacity>
                     </Drawer.Section>
                 </View>

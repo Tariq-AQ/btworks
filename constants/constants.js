@@ -4,9 +4,9 @@ import { DefaultTheme } from '@react-navigation/native';
 
 //Contact Details
 
-export const phoneNumber = '07397829976';
-export const email = 'tariq_esa90@yahoo.com';
-export const whatsapp = 'whatsapp://send?text=Hi, could you please let me know of your earliest availabilty?&phone=' + '+447397829976';
+export const phoneNumber = '07873881124';
+export const email = 'bandtplasterwork"gmail.com';
+export const whatsapp = 'whatsapp://send?text=Hi, could you please let me know of your earliest availabilty?&phone=' + '+447873881124';
 
 //Images
 

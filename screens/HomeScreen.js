@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import * as constants from '../constants/constants';
 import HorizontalSpeparator from '../components/HorizontalSpeparator';
+import OurServices from './OurServices';
 
 export default function HomeScreen({ navigation }) {
 
@@ -24,7 +25,7 @@ export default function HomeScreen({ navigation }) {
                             can check the availablity of more than 500
                             builders.</Text>
 
-                        <TouchableOpacity style={styles.button} onPress={() => { return; }}>
+                        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Services')}>
                             <Text style={styles.btnText}>Check Our Services</Text>
                         </TouchableOpacity>
                         <HorizontalSpeparator />
@@ -33,7 +34,7 @@ export default function HomeScreen({ navigation }) {
                         <Text style={styles.pHeader}>Hire with confidence!</Text>
                         <Text style={styles.p1}>B&T Builders lets you hire builders with confidence
                             by connecting you with qualified and experienced builders. You can visit gallery to see the quality work our builders have done </Text>
-                        <TouchableOpacity style={styles.button} onPress={() => { return; }}>
+                        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Gallery')}>
                             <Text style={styles.btnText}>Visit Gallery</Text>
                         </TouchableOpacity>
                         <HorizontalSpeparator />
@@ -46,14 +47,19 @@ export default function HomeScreen({ navigation }) {
 
                         <View style={styles.bottomIcons}>
                             <TouchableOpacity onPress={() => { Linking.openURL(`tel:${constants.phoneNumber}`); }}>
-                                <Icon name='phone' size={30} color={constants.myColors.navyDark} />
+                                <Icon name='phone' size={40} color={constants.myColors.navyDark} />
                             </TouchableOpacity>
                             <TouchableOpacity onPress={() => { Linking.openURL(constants.whatsapp); }}>
-                                <Icon name='whatsapp' size={30} color={constants.myColors.navyDark} />
+                                <Icon name='whatsapp' size={40} color={constants.myColors.navyDark} />
                             </TouchableOpacity>
                             <TouchableOpacity onPress={() => { Linking.openURL(`mailto:${constants.email}`); }}>
-                                <Icon name='email' size={30} color={constants.myColors.navyDark} />
+                                <Icon name='email' size={40} color={constants.myColors.navyDark} />
                             </TouchableOpacity>
+                        </View>
+                        <HorizontalSpeparator />
+                        <View style={{ marginTop: 10, marginBottom: 5 }}>
+                            <Text>B&T  |  UK  |  Yorkshire  |  2021</Text>
+
                         </View>
                     </View>
                 </ScrollView>
@@ -96,6 +102,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 20,
         marginBottom: 30,
+        color: constants.myColors.navyDark,
     },
     squareLogo: {
         width: '90%',
@@ -106,7 +113,8 @@ const styles = StyleSheet.create({
     van: {
         width: '80%',
         height: 150,
-        marginVertical: 20,
+        marginBottom: 20,
+        marginTop: 40,
     },
     brush: {
         width: 200,
