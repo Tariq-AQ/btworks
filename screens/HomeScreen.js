@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { Button, StyleSheet, View, ImageBackground, Text, ScrollView, Image } from 'react-native';
+import { Button, StyleSheet, View, ImageBackground, Text, ScrollView, Image, TouchableOpacity, Linking } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
 import * as constants from '../constants/constants';
-
+import HorizontalSpeparator from '../components/HorizontalSpeparator';
 
 export default function HomeScreen({ navigation }) {
 
@@ -13,14 +14,47 @@ export default function HomeScreen({ navigation }) {
             <ImageBackground style={styles.backgroundImage} source={constants.backgroundImage} >
                 <ScrollView>
                     <View style={styles.textElement}>
-                        <Text style={styles.pHeader}>Welcome to B&T Builders!</Text>
 
-                        <Text style={styles.p1}>B&T Builders will let you find
-                            the best services
-                            around you at competitive prices.Here you
-                            can check availablity of our range of more than 500
-                            builders, get a quote, and watch the process of your
-                            home builder in real time.</Text>
+                        <Image style={styles.squareLogo} source={constants.squareLogo} />
+                        <Text style={styles.mainHeader}>Welcome to B&T Builders!</Text>
+
+                        <Text style={styles.p1}>B&T Builders will help you find
+                            the best services and builders
+                            around you at competitive prices. Here you
+                            can check the availablity of more than 500
+                            builders.</Text>
+
+                        <TouchableOpacity style={styles.button} onPress={() => { return; }}>
+                            <Text style={styles.btnText}>Check Our Services</Text>
+                        </TouchableOpacity>
+                        <HorizontalSpeparator />
+
+                        <Image style={styles.troll} source={constants.trollWorkers} />
+                        <Text style={styles.pHeader}>Hire with confidence!</Text>
+                        <Text style={styles.p1}>B&T Builders lets you hire builders with confidence
+                            by connecting you with qualified and experienced builders. You can visit gallery to see the quality work our builders have done </Text>
+                        <TouchableOpacity style={styles.button} onPress={() => { return; }}>
+                            <Text style={styles.btnText}>Visit Gallery</Text>
+                        </TouchableOpacity>
+                        <HorizontalSpeparator />
+
+                        <Image style={styles.van} source={constants.van} />
+
+                        <Text style={styles.pHeader}>Onsite Quotes</Text>
+                        <Text style={styles.p1}>If you're unsure of the type of service you need, let us know and one of our builders will help you pick the right service and material on site for free. </Text>
+
+
+                        <View style={styles.bottomIcons}>
+                            <TouchableOpacity onPress={() => { Linking.openURL(`tel:${constants.phoneNumber}`); }}>
+                                <Icon name='phone' size={30} color={constants.myColors.navyDark} />
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => { Linking.openURL(constants.whatsapp); }}>
+                                <Icon name='whatsapp' size={30} color={constants.myColors.navyDark} />
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => { Linking.openURL(`mailto:${constants.email}`); }}>
+                                <Icon name='email' size={30} color={constants.myColors.navyDark} />
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </ScrollView>
             </ImageBackground>
@@ -49,11 +83,61 @@ const styles = StyleSheet.create({
     pHeader: {
         fontWeight: 'bold',
         marginVertical: 10,
+        color: constants.myColors.navyDark,
     },
     troll: {
-        width: 200,
-        height: 300,
+        width: '90%',
+        height: 220,
         opacity: 1,
+        marginVertical: 20,
+
+    },
+    mainHeader: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        marginBottom: 30,
+    },
+    squareLogo: {
+        width: '90%',
+        height: 200,
+        opacity: 1,
+        marginBottom: -20,
+    },
+    van: {
+        width: '80%',
+        height: 150,
+        marginVertical: 20,
+    },
+    brush: {
+        width: 200,
+        height: 40,
+    },
+    button: {
+        marginVertical: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: constants.myColors.navyDark,
+        width: 200,
+        height: 40,
+        borderRadius: 0,
+        marginBottom: 50,
+        shadowColor: 'rgba(0,0,0, .4)', // IOS
+        shadowOffset: { height: 1, width: 1 }, // IOS
+        shadowOpacity: 1, // IOS
+        shadowRadius: 1, //IOS
+        elevation: 2, // Android
+
+    },
+    btnText: {
+        fontWeight: 'bold',
+        color: constants.myColors.gray,
+    },
+    bottomIcons: {
+        flexDirection: 'row',
+        marginVertical: 20,
+        width: '60%',
+        alignItems: 'center',
+        justifyContent: 'space-between'
     }
 
 })

@@ -22,10 +22,10 @@ export function DrawerContent(props) {
                         <View style={styles.drawerContent}>
                             <View style={styles.userInfoSection}>
                                 <View style={{ flexDirection: 'row', paddingBottom: 10, width: '100%', borderBottomColor: '#c9c9c9', borderBottomWidth: 1, marginTop: 15, alignItems: 'center' }} >
-                                    <Avatar.Image style={{ marginLeft: 15, backgroundColor: 'white' }} source={require('../assets/logo.png')} size={50} />
+                                    <Avatar.Image style={{ marginLeft: 15, backgroundColor: 'white' }} source={constants.logo} size={50} />
                                     <View style={{ marginLeft: 10, flexDirection: 'row' }}>
                                         <Title style={{ color: constants.myColors.themeColor, fontWeight: 'bold' }}>B&T</Title>
-                                        <Title style={{ marginLeft: 5 }}>Builders</Title>
+                                        <Title style={{ marginLeft: 5, color: constants.myColors.navyDark }}>Builders</Title>
                                     </View>
                                 </View>
 
@@ -41,7 +41,7 @@ export function DrawerContent(props) {
                                 <DrawerItem icon={({ color, size }) => (
                                     <Icon
                                         name="home"
-                                        color={focusedRoute === 0 ? '#fcd703' : color}
+                                        color={focusedRoute === 0 ? constants.myColors.themeColor : constants.myColors.navyDark}
                                         size={size} />
                                 )}
                                     label="Home"
@@ -51,7 +51,7 @@ export function DrawerContent(props) {
                                 <DrawerItem icon={({ color, size }) => (
                                     <Icon
                                         name="toolbox"
-                                        color={focusedRoute === 1 ? '#fcd703' : color}
+                                        color={focusedRoute === 1 ? constants.myColors.themeColor : constants.myColors.navyDark}
                                         size={size} />
                                 )}
                                     label="Services"
@@ -60,7 +60,7 @@ export function DrawerContent(props) {
                                 <DrawerItem icon={({ color, size }) => (
                                     <Icon
                                         name="image-album"
-                                        color={focusedRoute === 2 ? '#fcd703' : color}
+                                        color={focusedRoute === 2 ? constants.myColors.themeColor : constants.myColors.navyDark}
                                         size={size} />
                                 )}
                                     label="Gallery"
@@ -70,7 +70,7 @@ export function DrawerContent(props) {
                                 <DrawerItem icon={({ color, size }) => (
                                     <Icon
                                         name="currency-gbp"
-                                        color={focusedRoute === 3 ? '#fcd703' : color}
+                                        color={focusedRoute === 3 ? constants.myColors.themeColor : constants.myColors.navyDark}
                                         size={size} />
                                 )}
                                     label="Prices"
