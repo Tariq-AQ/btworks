@@ -1,0 +1,267 @@
+Object {
+    "descriptors": Object {
+        "Gallery-8_3wWi9QoDzNIiJ-85Kkj": Object {
+            "navigation": Object {
+                "addListener": [Function addListener
+                ],
+                "canGoBack": [Function canGoBack
+                ],
+                "closeDrawer": [Function anonymous
+                ],
+                "dispatch": [Function dispatch
+                ],
+                "getParent": [Function getParent
+                ],
+                "getState": [Function anonymous
+                ],
+                "goBack": [Function anonymous
+                ],
+                "isFocused": [Function isFocused
+                ],
+                "jumpTo": [Function anonymous
+                ],
+                "navigate": [Function anonymous
+                ],
+                "openDrawer": [Function anonymous
+                ],
+                "removeListener": [Function removeListener
+                ],
+                "reset": [Function anonymous
+                ],
+                "setOptions": [Function setOptions
+                ],
+                "setParams": [Function anonymous
+                ],
+                "toggleDrawer": [Function anonymous
+                ],
+            },
+            "options": Object {
+                "drawerIcon": [Function drawerIcon
+                ],
+                "title": "Gallery",
+            },
+            "render": [Function render
+            ],
+            "route": Object {
+                "key": "Gallery-8_3wWi9QoDzNIiJ-85Kkj",
+                "name": "Gallery",
+                "params": undefined,
+            },
+        },
+        "Home-zTKuxwWNbKF8EfIEHHGds": Object {
+            "navigation": Object {
+                "addListener": [Function addListener
+                ],
+                "canGoBack": [Function canGoBack
+                ],
+                "closeDrawer": [Function anonymous
+                ],
+                "dispatch": [Function dispatch
+                ],
+                "getParent": [Function getParent
+                ],
+                "getState": [Function anonymous
+                ],
+                "goBack": [Function anonymous
+                ],
+                "isFocused": [Function isFocused
+                ],
+                "jumpTo": [Function anonymous
+                ],
+                "navigate": [Function anonymous
+                ],
+                "openDrawer": [Function anonymous
+                ],
+                "removeListener": [Function removeListener
+                ],
+                "reset": [Function anonymous
+                ],
+                "setOptions": [Function setOptions
+                ],
+                "setParams": [Function anonymous
+                ],
+                "toggleDrawer": [Function anonymous
+                ],
+            },
+            "options": Object {
+                "drawerIcon": [Function drawerIcon
+                ],
+                "title": "Home",
+            },
+            "render": [Function render
+            ],
+            "route": Object {
+                "key": "Home-zTKuxwWNbKF8EfIEHHGds",
+                "name": "Home",
+                "params": undefined,
+            },
+        },
+        "Our Services-4PqG_NGjq_UYHvZj1MlQ5": Object {
+            "navigation": Object {
+                "addListener": [Function addListener
+                ],
+                "canGoBack": [Function canGoBack
+                ],
+                "closeDrawer": [Function anonymous
+                ],
+                "dispatch": [Function dispatch
+                ],
+                "getParent": [Function getParent
+                ],
+                "getState": [Function anonymous
+                ],
+                "goBack": [Function anonymous
+                ],
+                "isFocused": [Function isFocused
+                ],
+                "jumpTo": [Function anonymous
+                ],
+                "navigate": [Function anonymous
+                ],
+                "openDrawer": [Function anonymous
+                ],
+                "removeListener": [Function removeListener
+                ],
+                "reset": [Function anonymous
+                ],
+                "setOptions": [Function setOptions
+                ],
+                "setParams": [Function anonymous
+                ],
+                "toggleDrawer": [Function anonymous
+                ],
+            },
+            "options": Object {
+                "drawerIcon": [Function drawerIcon
+                ],
+                "title": "Our Services",
+            },
+            "render": [Function render
+            ],
+            "route": Object {
+                "key": "Our Services-4PqG_NGjq_UYHvZj1MlQ5",
+                "name": "Our Services",
+                "params": undefined,
+            },
+        },
+        "Prices-hdzx1F1nhnF6THySoltMy": Object {
+            "navigation": Object {
+                "addListener": [Function addListener
+                ],
+                "canGoBack": [Function canGoBack
+                ],
+                "closeDrawer": [Function anonymous
+                ],
+                "dispatch": [Function dispatch
+                ],
+                "getParent": [Function getParent
+                ],
+                "getState": [Function anonymous
+                ],
+                "goBack": [Function anonymous
+                ],
+                "isFocused": [Function isFocused
+                ],
+                "jumpTo": [Function anonymous
+                ],
+                "navigate": [Function anonymous
+                ],
+                "openDrawer": [Function anonymous
+                ],
+                "removeListener": [Function removeListener
+                ],
+                "reset": [Function anonymous
+                ],
+                "setOptions": [Function setOptions
+                ],
+                "setParams": [Function anonymous
+                ],
+                "toggleDrawer": [Function anonymous
+                ],
+            },
+            "options": Object {
+                "drawerIcon": [Function drawerIcon
+                ],
+                "title": "Prices",
+            },
+            "render": [Function render
+            ],
+            "route": Object {
+                "key": "Prices-hdzx1F1nhnF6THySoltMy",
+                "name": "Prices",
+                "params": undefined,
+            },
+        },
+    },
+    "navigation": Object {
+        "canGoBack": [Function canGoBack
+        ],
+        "closeDrawer": [Function anonymous
+        ],
+        "dispatch": [Function dispatch
+        ],
+        "emit": [Function anonymous
+        ],
+        "getParent": [Function getParent
+        ],
+        "getState": [Function anonymous
+        ],
+        "goBack": [Function anonymous
+        ],
+        "isFocused": [Function anonymous
+        ],
+        "jumpTo": [Function anonymous
+        ],
+        "navigate": [Function anonymous
+        ],
+        "openDrawer": [Function anonymous
+        ],
+        "reset": [Function anonymous
+        ],
+        "setParams": [Function anonymous
+        ],
+        "toggleDrawer": [Function anonymous
+        ],
+    },
+    "state": Object {
+        "default": "closed",
+        "history": Array [
+        Object {
+                "key": "Home-zTKuxwWNbKF8EfIEHHGds",
+                "type": "route",
+            },
+        ],
+        "index": 0,
+        "key": "drawer-eqtbO7o4p536Nv3ofIOEc",
+        "routeNames": Array [
+            "Home",
+            "Our Services",
+            "Gallery",
+            "Prices",
+        ],
+        "routes": Array [
+        Object {
+                "key": "Home-zTKuxwWNbKF8EfIEHHGds",
+                "name": "Home",
+                "params": undefined,
+            },
+        Object {
+                "key": "Our Services-4PqG_NGjq_UYHvZj1MlQ5",
+                "name": "Our Services",
+                "params": undefined,
+            },
+        Object {
+                "key": "Gallery-8_3wWi9QoDzNIiJ-85Kkj",
+                "name": "Gallery",
+                "params": undefined,
+            },
+        Object {
+                "key": "Prices-hdzx1F1nhnF6THySoltMy",
+                "name": "Prices",
+                "params": undefined,
+            },
+        ],
+        "stale": false,
+        "type": "drawer",
+    },
+}

@@ -3,6 +3,8 @@ import { Button, StyleSheet, View, ImageBackground, Text } from 'react-native';
 
 
 export default function HomeScreen({ navigation }) {
+
+
     return (
         <View style={styles.container}>
 
