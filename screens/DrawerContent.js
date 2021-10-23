@@ -17,7 +17,6 @@ export function DrawerContent(props) {
 
             <ImageBackground source={require('../assets/background.jpg')} style={styles.artImage2}>
                 <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                    <Text>Your Contents</Text>
 
                     <DrawerContentScrollView {...props}>
                         <View style={styles.drawerContent}>
@@ -26,7 +25,7 @@ export function DrawerContent(props) {
                                     <Avatar.Image style={{ marginLeft: 15, backgroundColor: 'white' }} source={require('../assets/logo.png')} size={50} />
                                     <View style={{ marginLeft: 10, flexDirection: 'row' }}>
                                         <Title style={{ color: constants.myColors.themeColor, fontWeight: 'bold' }}>B&T</Title>
-                                        <Title style={{ marginLeft: 5 }}>Plasterworks</Title>
+                                        <Title style={{ marginLeft: 5 }}>Builders</Title>
                                     </View>
                                 </View>
 
@@ -55,7 +54,7 @@ export function DrawerContent(props) {
                                         color={focusedRoute === 1 ? '#fcd703' : color}
                                         size={size} />
                                 )}
-                                    label="Our Services"
+                                    label="Services"
                                     onPress={() => { props.navigation.navigate('Our Services') }}
                                 />
                                 <DrawerItem icon={({ color, size }) => (
