@@ -3,12 +3,12 @@ import { View, StyleSheet, Image, Linking, ImageBackground, TouchableOpacity } f
 import { Avatar, Title, Caption, Paragraph, Drawer, Text, TouchableRipple, Switch } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
+import * as constants from '../constants/constants';
 import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
 
 
 
 export function DrawerContent(props) {
-
 
     const focusedRoute = props.state.index;
     return (
@@ -25,7 +25,7 @@ export function DrawerContent(props) {
                                 <View style={{ flexDirection: 'row', paddingBottom: 10, width: '100%', borderBottomColor: '#c9c9c9', borderBottomWidth: 1, marginTop: 15, alignItems: 'center' }} >
                                     <Avatar.Image style={{ marginLeft: 15, backgroundColor: 'white' }} source={require('../assets/logo.png')} size={50} />
                                     <View style={{ marginLeft: 10, flexDirection: 'row' }}>
-                                        <Title style={{ color: '#fcd703', fontWeight: 'bold' }}>B&T</Title>
+                                        <Title style={{ color: constants.myColors.themeColor, fontWeight: 'bold' }}>B&T</Title>
                                         <Title style={{ marginLeft: 5 }}>Plasterworks</Title>
                                     </View>
                                 </View>
@@ -85,19 +85,25 @@ export function DrawerContent(props) {
 
                         </View>
                     </DrawerContentScrollView>
+
+
+                    <View style={{ marginVertical: 10, borderBottomColor: '#ebebeb', borderBottomWidth: 1, width: '90%', justifyContent: 'center', alignItems: 'center', padding: 5 }}>
+                        <Text style={{ fontWeight: 'bold', }} >Get in touch!</Text>
+                    </View>
                     <Drawer.Section style={styles.bottomDrawerSection}>
-                        <TouchableOpacity onPress={() => { return; }}>
+                        <TouchableOpacity onPress={() => { Linking.openURL(`tel:${constants.phoneNumber}`); }}>
                             <Icon name='phone' size={30} color={'black'} />
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => { return; }}>
+                        <TouchableOpacity onPress={() => { Linking.openURL(constants.whatsapp); }}>
                             <Icon name='whatsapp' size={30} color={'black'} />
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => { return; }}>
+                        <TouchableOpacity onPress={() => { Linking.openURL(`mailto:${constants.email}`); }}>
                             <Icon name='email' size={30} color={'black'} />
                         </TouchableOpacity>
                     </Drawer.Section>
                 </View>
             </ImageBackground>
+
         </View>
 
     );
