@@ -2,6 +2,7 @@ import { BackgroundImage } from 'react-native';
 import { DefaultTheme } from '@react-navigation/native';
 
 
+
 //Contact Details
 
 export const phoneNumber = '07873881124';
@@ -20,6 +21,12 @@ export const logo = require('../assets/logo.png');
 export const van = require('../assets/van.png');
 export const brush = require('../assets/btnBackBrush.png');
 
+
+//Font
+export const font = require('../assets/JosefinSans-Bold.ttf');
+
+
+
 //Colors
 
 export const myColors = {
@@ -28,6 +35,7 @@ export const myColors = {
     navyDark: '#2a5b84',
     navyLight: '#aac4d1',
     gray: '#dfdfdf',
+    grayLight: '#eeeeee',
 
 
 }

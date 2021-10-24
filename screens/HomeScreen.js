@@ -58,8 +58,7 @@ export default function HomeScreen({ navigation }) {
                         </View>
                         <HorizontalSpeparator />
                         <View style={{ marginTop: 10, marginBottom: 5 }}>
-                            <Text>B&T  |  UK  |  Yorkshire  |  2021</Text>
-
+                            <Text style={{ color: constants.myColors.gray }} >B&T  |  UK  |  Yorkshire  |  2021</Text>
                         </View>
                     </View>
                 </ScrollView>

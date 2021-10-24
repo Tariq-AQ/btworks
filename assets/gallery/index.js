@@ -1,0 +1,13 @@
+export const deck1 = require('./decking1.jpg');
+export const deck2 = require('./decking2.jpg');
+export const deck3 = require('./decking3.jpg');
+export const deck4 = require('./decking4.jpg');
+export const patio1 = require('./patio1.jpg');
+export const patio2 = require('./patio3.jpg');
+export const patio3 = require('./patio2.jpg');
+export const pb1 = require('./plasterboard1.jpg');
+export const plastering = require('./plastering.jpg');
+export const steps = require('./steps.jpg');
+export const tiles = require('./tiles.jpg');
+export const fencing = require('./fencing.jpg');
+export const kanaf = require('./kanaf.jpg');
